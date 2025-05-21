@@ -13,7 +13,7 @@
 ## 🛠️ Built With
 
 - **HTML5**
-- **CSS3** (no frameworks, no JavaScript)
+- **CSS3**
 
 ## 📍 Event Details
 
