@@ -8,8 +8,7 @@
 - 🌈 Neon glow effects and gradients
 - 📱 Mobile-friendly layout
 - 💡 Call-to-action “Book Now” button with blinking glow
-- 🎤 Lineup includes international artists like BTS, Arijit Singh, Taylor Swift and  DJ Snake.
-
+- 
 ## 🛠️ Built With
 
 - **HTML5**
