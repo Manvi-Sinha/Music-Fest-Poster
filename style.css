@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .poster {
+    position: relative;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.3);
+    max-width: 500px;
+    z-index: 2;
+  }
+  
+  .poster::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, #000 40%, #444 42%, #000 43%, #000 100%);
+    border-radius: 50%;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    z-index: 0;
+    opacity: 0.15;
+    animation: spin 20s linear infinite;
+  }
+  
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #00f7ff;
+    text-shadow:
+      0 0 10px #00f7ff,
+      0 0 20px #00f7ff,
+      0 0 40px #00f7ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .tagline {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #ccc;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  .details p {
+    margin: 0.5rem 0;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+  }
+  
+  .lineup {
+    margin-top: 2rem;
+  }
+  
+  .lineup h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+  }
+  
+  .lineup ul {
+    list-style: none;
+  }
+  
+  .lineup li {
+    padding: 0.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #00ffe7;
+    text-shadow: 0 0 6px #00ffe7;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background: #00f7ff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    animation: blink 1.2s infinite alternate;
+    box-shadow:
+      0 0 10px #00f7ff,
+      0 0 20px #00f7ff,
+      0 0 40px #00f7ff;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+      box-shadow:
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff,
+        0 0 40px #00f7ff;
+    }
+    100% {
+      opacity: 0.6;
+      box-shadow:
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+    }
+  }
+  
